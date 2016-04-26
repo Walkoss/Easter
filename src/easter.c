@@ -1,17 +1,19 @@
 #include "easter.h"
 
-int main(int argc, char **argv)
+int easter(int argc, char **argv)
 {
-  if (!check_argc(argc))
-    if (check_fopen(argv))
-      easter();
-    else
-      my_putstr("Erreur lors de l'ouverture d'un fichier\n");
-  else
-    my_putstr("Nombre d'arguments incorrects\n");
+	/*t_env env;
+
+	env.grille = init_grille(argv[1]);
+	env.liste = init_liste(argv[2]);
+	solve_crossword(&env);*/
+	return (RETURN_SUCCESS);
 }
 
-int easter()
+int main(int argc, char **argv)
 {
-  return (1);
+  if (!check_argc(argc) && !check_grille(argc, argv) 
+  						&& !check_liste(argc, argv))
+      easter(argc, argv);
+  return (RETURN_SUCCESS);
 }
