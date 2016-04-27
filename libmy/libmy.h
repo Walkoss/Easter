@@ -24,5 +24,7 @@ int		isint(char *str);
 int 	my_abs(int num);
 int 	my_strchr(char c, char *str);
 void 	*malloc_failed(char *msg);
+char	*my_revstr(char *str);
+char **my_revstr_to_wordtab(char **liste, int y);
 
 #endif
