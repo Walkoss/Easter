@@ -27,4 +27,9 @@ void 	*malloc_failed(char *msg);
 char	*my_revstr(char *str);
 char **my_revstr_to_wordtab(char **liste, int y);
 
+char	*my_strcpy2(char *dest, char *src);
+char	*my_strdup2(char *str);
+int 	cmp(char *world_liste, char *word_grille);
+int my_strpos(char *haystack, char *needle);
+
 #endif

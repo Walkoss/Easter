@@ -9,7 +9,7 @@ int check_argc(int argc)
 	return (RETURN_FAIL);
 }
 
-int check_grille(int argc, char **argv)
+int check_grille(char **argv)
 {
 	char	*content;
 	int	handle;
@@ -37,7 +37,7 @@ int check_grille(int argc, char **argv)
 	return (RETURN_SUCCESS);
 }
 
-int check_liste(int argc, char **argv)
+int check_liste(char **argv)
 {
 	char	*content;
 	int	handle;

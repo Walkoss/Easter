@@ -5,7 +5,7 @@
 
 typedef struct s_list
 {
-  	void		*data;
+  	void	 		*data;
 	struct s_list 	*next;
 }		t_list;
 
@@ -23,8 +23,6 @@ void	list_apply(t_list *begin, int (*f)());
 void 	list_append(t_list** node, t_list* new_node);
 void 	list_remove(t_list** node_begin, t_list* rm_node);
 void 	list_swap_data(t_list *first_node, t_list *scd_node);
-int	list_size(t_list *begin);
-
-
+int		list_size(t_list *begin);
 
 #endif
